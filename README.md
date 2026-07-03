@@ -1,106 +1,149 @@
 # 🏦 Banco Digital Kriolu
 
-Sistema de autenticação segura desenvolvido no âmbito da **Sprint Mission 1** da unidade curricular **Testes e Qualidade de Software**.
+## Sprint Mission 1 – Sistema de Autenticação Segura
 
-O projeto implementa um conjunto de mecanismos de segurança para proteger o acesso às contas dos clientes de um banco digital, recorrendo a autenticação multifator, autenticação biométrica simulada, reconhecimento de dispositivos confiáveis e testes automatizados.
+### Grupo I
 
----
-
-# Objetivos
-
-- Implementar um sistema de autenticação seguro.
-- Aplicar autenticação em dois fatores (2FA).
-- Implementar autenticação biométrica simulada.
-- Reconhecer dispositivos confiáveis.
-- Enviar alertas de segurança por Email e SMS.
-- Automatizar os testes utilizando Playwright.
+Projeto desenvolvido no âmbito da unidade curricular **Testes e Qualidade de Software**, com o objetivo de implementar um sistema de autenticação seguro para o Banco Digital Kriolu.
 
 ---
 
-# Funcionalidades
+# 📌 Objetivo
 
-- ✅ Login com utilizador e palavra-passe
-- ✅ Autenticação em Dois Fatores (OTP)
-- ✅ Escolha do método de envio (Email ou SMS)
-- ✅ Validação do código OTP
-- ✅ Dashboard do utilizador
-- ✅ Histórico de acessos
-- ✅ Recuperação de conta
-- ✅ Logout
-- ✅ Autenticação biométrica (simulada)
-- ✅ Reconhecimento de dispositivos confiáveis
-- ✅ Alertas de segurança por Email
-- ✅ Alertas de segurança por SMS
+Desenvolver um sistema de autenticação que permita aumentar a segurança das contas bancárias através da implementação de:
+
+- Login com utilizador e palavra-passe;
+- Autenticação em dois fatores (2FA);
+- Autenticação biométrica;
+- Reconhecimento de dispositivos confiáveis;
+- Alertas de segurança por Email;
+- Alertas de segurança por SMS.
 
 ---
 
-# Tecnologias Utilizadas
+# 🚀 Tecnologias Utilizadas
 
-| Tecnologia | Finalidade |
-|------------|------------|
-| HTML5 | Interface |
-| CSS3 | Estilos |
-| JavaScript | Frontend |
-| Node.js | Backend |
-| Express.js | API REST |
-| JSON | Base de dados |
-| Playwright | Testes Automatizados |
-| Visual Studio Code | Desenvolvimento |
-| Git | Controlo de versões |
-| GitHub | Hospedagem do projeto |
+## Frontend
+
+- HTML5
+- CSS3
+- JavaScript
+
+## Backend
+
+- Node.js
+- Express.js
+
+## Testes
+
+- Playwright
+
+## Base de Dados
+
+- JSON (users.json)
 
 ---
 
-# Estrutura do Projeto
+# 📂 Estrutura do Projeto
 
 ```
 Banco-Digital-Kriolu/
+
 │
 ├── backend/
 │   ├── server.js
 │   ├── users.json
-│   └── package.json
+│   ├── package.json
+│   └── tests/
 │
 ├── frontend/
 │   ├── login.html
 │   ├── metodo2fa.html
 │   ├── otp.html
 │   ├── dashboard.html
-│   ├── recuperar.html
+│   ├── recover.html
 │   ├── style.css
-│   ├── app.js
-│   ├── metodo2fa.js
-│   ├── otp.js
-│   ├── dashboard.js
-│   └── recuperar.js
+│   └── *.js
 │
-├── tests/
-│   └── funcional/
-│       └── login.spec.js
-│
-├── playwright.config.js
 └── README.md
 ```
 
 ---
 
-# Instalação
+# 🔐 Funcionalidades
 
-## Clonar o repositório
+## Login
 
-```bash
-git clone https://github.com/SEU_UTILIZADOR/Banco-Digital-Kriolu.git
-```
-
-Entrar na pasta do projeto
-
-```bash
-cd Banco-Digital-Kriolu
-```
+- Autenticação com utilizador e palavra-passe.
 
 ---
 
-# Instalar dependências
+## Autenticação 2FA
+
+Após o login o utilizador escolhe receber o código OTP por:
+
+- Email
+- SMS
+
+---
+
+## Código OTP
+
+- Código de 6 dígitos.
+- Validade de 30 segundos.
+- Validação antes do acesso ao Dashboard.
+
+---
+
+## Dashboard
+
+Apresenta:
+
+- Nome
+- Saldo
+- Email
+- Telefone
+- Histórico
+- Último acesso
+
+---
+
+## Logout
+
+Permite terminar a sessão do utilizador.
+
+---
+
+## Recuperação de Conta
+
+Permite redefinir a palavra-passe.
+
+---
+
+## Autenticação Biométrica
+
+Permite acesso direto ao Dashboard quando a biometria está ativa.
+
+---
+
+## Dispositivo Confiável
+
+Permite reconhecer dispositivos previamente autorizados.
+
+---
+
+## Alertas
+
+Após autenticação o sistema envia:
+
+- Alerta por Email
+- Alerta por SMS
+
+---
+
+# ▶️ Como Executar
+
+## Instalar dependências
 
 ```bash
 npm install
@@ -108,106 +151,89 @@ npm install
 
 ---
 
-# Iniciar o servidor
+## Iniciar o servidor
 
 ```bash
-node backend/server.js
+node server.js
 ```
 
-ou
+Servidor disponível em:
 
-```bash
-npm start
+```
+http://localhost:3000
 ```
 
 ---
 
-# Executar o Frontend
+## Abrir o Frontend
 
-Abrir a pasta **frontend** utilizando o **Live Server** do Visual Studio Code.
-
-O sistema ficará disponível em:
+Abrir:
 
 ```
-http://127.0.0.1:5500/frontend/login.html
+frontend/login.html
 ```
+
+ou utilizar o Live Server do Visual Studio Code.
 
 ---
 
-# Executar os Testes
+# 🧪 Testes Automatizados
 
-Executar todos os testes:
+Foi utilizada a framework **Playwright** para automatizar os testes do sistema.
+
+## Executar todos os testes
 
 ```bash
 npx playwright test
 ```
 
-Executar mostrando o navegador:
+---
+
+## Executar apenas um teste
+
+Exemplo:
 
 ```bash
-npx playwright test --headed
-```
-
-Executar apenas um ficheiro:
-
-```bash
-npx playwright test tests/funcional/login.spec.js
-```
-
-Visualizar o relatório:
-
-```bash
-npx playwright show-report
+npx playwright test tests/login.spec.js
 ```
 
 ---
 
-# Casos de Teste
+# ✅ Casos de Teste
 
 ## Testes Funcionais
 
-- Login
-- Login + OTP
-- Login Biométrico
-- Dashboard
-- Logout
-- Dispositivo confiável
-- Alerta por Email
-- Alerta por SMS
+- CT-01 – Login
+- CT-02 – Login + OTP
+- CT-03 – Login Biométrico
+- CT-04 – Logout
+- CT-05 – Dispositivo Confiável
+- CT-06 – Alerta por Email
+- CT-07 – Alerta por SMS
+- CT-08 – Dashboard
+
+---
 
 ## Testes Negativos
 
-- Palavra-passe incorreta
-- OTP incorreto
-- OTP expirado
-- Biometria desativada
-
-## Testes de API
-
-- Login
-- Validação do OTP
+- NT-01 – Palavra-passe incorreta
+- NT-02 – Código OTP incorreto
+- NT-03 – Código OTP expirado
+- NT-04 – Biometria desativada
 
 ---
 
-# Qualidade do Software
+## Testes API
 
-O projeto foi desenvolvido tendo como referência a norma **ISO/IEC 25010**, privilegiando:
-
-- Segurança
-- Fiabilidade
-- Usabilidade
-- Adequação Funcional
-- Eficiência
-- Compatibilidade
-- Manutenibilidade
-- Portabilidade
+- API-01 – POST /login
+- API-02 – POST /validate-otp
 
 ---
 
-# Resultados
+# 📊 Resultados
 
-| Tipo de Teste | Quantidade |
-|----------------|-----------:|
+| Tipo | Quantidade |
+|------|-----------:|
 | Testes Funcionais | 8 |
 | Testes Negativos | 4 |
 | Testes API | 2 |
@@ -215,21 +241,56 @@ O projeto foi desenvolvido tendo como referência a norma **ISO/IEC 25010**, pri
 
 ## Resultado Final
 
-- Testes executados: **14**
-- Testes aprovados: **14**
-- Testes reprovados: **0**
-- Taxa de sucesso: **100%**
+- Testes Executados: **14**
+- Testes Aprovados: **14**
+- Testes Reprovados: **0**
+
+**Taxa de Sucesso: 100%**
 
 ---
 
-# Autor
+# 📈 Métricas de Qualidade
 
-**Tech Hard**
-
-Projeto desenvolvido para a unidade curricular **Testes e Qualidade de Software**.
+| KPI | Resultado |
+|------|----------:|
+| Taxa de Sucesso | **100%** |
+| Taxa de Defeitos | **28,57%** |
+| Cobertura de Testes | **100%** |
 
 ---
 
-# Licença
+# 🔒 Requisitos Implementados
 
-Este projeto foi desenvolvido exclusivamente para fins académicos.
+- Login Seguro
+- Autenticação 2FA
+- Recuperação de Conta
+- Dashboard
+- Logout
+- Autenticação Biométrica
+- Dispositivo Confiável
+- Alertas por Email
+- Alertas por SMS
+
+---
+
+# 👥 Grupo
+
+**Grupo I**
+
+Sprint Mission 1
+
+Banco Digital Kriolu
+
+Universidade de Santiago
+
+Curso de Engenharia Informática
+
+Ano Letivo 2025/2026
+
+---
+
+# 📌 Conclusão
+
+O projeto Banco Digital Kriolu implementa um sistema de autenticação seguro baseado em múltiplas camadas de proteção, incluindo autenticação em dois fatores, biometria e reconhecimento de dispositivos confiáveis.
+
+Foram realizados testes funcionais, negativos e de API, todos automatizados com Playwright. No final do desenvolvimento, os **14 testes foram executados com sucesso**, demonstrando a estabilidade e o correto funcionamento da aplicação.
