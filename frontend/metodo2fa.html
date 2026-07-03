@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Banco Digital Kriolu - Método OTP</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h1>🏦 Banco Digital Kriolu</h1>
+
+<p class="subtitulo">
+
+Escolha como pretende receber o código OTP
+
+</p>
+
+<div class="opcao">
+
+<label>
+
+<input
+type="radio"
+name="metodo"
+value="email"
+checked>
+
+📧 Email
+
+</label>
+
+</div>
+
+<div class="opcao">
+
+<label>
+
+<input
+type="radio"
+name="metodo"
+value="sms">
+
+📱 SMS
+
+</label>
+
+</div>
+
+<p id="mensagem"></p>
+
+<button id="btnEnviar">
+
+Enviar Código
+
+</button>
+
+</div>
+
+<script src="metodo2fa.js"></script>
+
+</body>
+
+</html>

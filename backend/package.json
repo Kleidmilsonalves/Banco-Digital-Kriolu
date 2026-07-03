@@ -1,0 +1,20 @@
+{
+  "name": "banco-digital-kriolu",
+  "version": "1.0.0",
+  "description": "Sistema Banco Digital Kriolu",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Ruth De Melo",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.1"
+  },
+  "keywords": [],
+  "type": "commonjs"
+}

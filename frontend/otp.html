@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Banco Digital Kriolu - OTP</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h1>🏦 Banco Digital Kriolu</h1>
+
+<p class="subtitulo">
+
+Introduza o código OTP enviado.
+
+</p>
+
+<label>Código OTP</label>
+
+<input
+type="text"
+id="otp"
+maxlength="6"
+placeholder="Ex.: 123456">
+
+<p id="contador">
+
+30 segundos
+
+</p>
+
+<p id="mensagem"></p>
+
+<button id="btnValidar">
+
+Validar
+
+</button>
+
+<button id="btnReenviar">
+
+Reenviar Código
+
+</button>
+
+</div>
+
+<script src="otp.js"></script>
+
+</body>
+
+</html>

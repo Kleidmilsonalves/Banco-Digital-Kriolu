@@ -1,0 +1,486 @@
+[
+  {
+    "id": 1,
+    "username": "admin",
+    "password": "Admin123@kalves",
+    "nome": "Administrador",
+    "email": "admin@kriolu.cv",
+    "telefone": "+2389123456",
+    "saldo": 15000,
+    "otp": "",
+    "otpExpires": 0,
+    "loginAttempts": 0,
+    "locked": false,
+    "deviceTrusted": true,
+    "biometricEnabled": true,
+    "emailAlerts": true,
+    "smsAlerts": true,
+    "lastDevice": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+    "history": [
+      {
+        "data": "03/07/2026, 00:42:41",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 00:43:56",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 00:48:01",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 00:48:28",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 00:49:40",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 00:53:08",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 00:58:58",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 00:59:46",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 01:06:11",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 01:07:45",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 01:15:38",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 01:23:11",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 01:23:41",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 01:24:04",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 01:27:31",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 01:28:07",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 01:28:43",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 01:28:50",
+        "acao": "Logout"
+      },
+      {
+        "data": "03/07/2026, 01:30:41",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 01:30:51",
+        "acao": "Logout"
+      },
+      {
+        "data": "03/07/2026, 01:31:51",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 09:25:56",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 09:26:05",
+        "acao": "Logout"
+      },
+      {
+        "data": "03/07/2026, 09:31:27",
+        "acao": "Login Biométrico"
+      },
+      {
+        "data": "03/07/2026, 09:31:31",
+        "acao": "Login Biométrico"
+      },
+      {
+        "data": "03/07/2026, 09:31:32",
+        "acao": "Login Biométrico"
+      },
+      {
+        "data": "03/07/2026, 09:31:35",
+        "acao": "Login Biométrico"
+      },
+      {
+        "data": "03/07/2026, 09:31:36",
+        "acao": "Login Biométrico"
+      },
+      {
+        "data": "03/07/2026, 09:31:45",
+        "acao": "Login Biométrico"
+      },
+      {
+        "data": "03/07/2026, 09:31:47",
+        "acao": "Login Biométrico"
+      },
+      {
+        "data": "03/07/2026, 09:36:16",
+        "acao": "Login Biométrico"
+      },
+      {
+        "data": "03/07/2026, 09:36:42",
+        "acao": "Logout"
+      },
+      {
+        "data": "03/07/2026, 09:36:59",
+        "acao": "Login Biométrico"
+      },
+      {
+        "data": "03/07/2026, 09:38:16",
+        "acao": "Login Biométrico"
+      },
+      {
+        "data": "03/07/2026, 10:27:40",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 10:28:48",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 10:36:06",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 10:45:24",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 10:47:54",
+        "acao": "Login Biométrico"
+      },
+      {
+        "data": "03/07/2026, 10:49:49",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 10:49:49",
+        "acao": "Logout"
+      },
+      {
+        "data": "03/07/2026, 10:51:59",
+        "acao": "Login Biométrico"
+      },
+      {
+        "data": "03/07/2026, 10:56:26",
+        "acao": "Login Biométrico"
+      },
+      {
+        "data": "03/07/2026, 10:56:29",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 10:56:33",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 10:56:33",
+        "acao": "Logout"
+      },
+      {
+        "data": "03/07/2026, 11:04:58",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:07:47",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:11:02",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:13:54",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:36:02",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:36:48",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:36:53",
+        "acao": "Login Biométrico"
+      },
+      {
+        "data": "03/07/2026, 11:37:05",
+        "acao": "Login Biométrico"
+      },
+      {
+        "data": "03/07/2026, 11:37:08",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:37:11",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:37:14",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:37:17",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:37:21",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:37:22",
+        "acao": "Logout"
+      },
+      {
+        "data": "03/07/2026, 11:38:04",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:38:53",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:39:09",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:39:12",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:39:15",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:39:18",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:39:23",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:39:23",
+        "acao": "Logout"
+      },
+      {
+        "data": "03/07/2026, 11:40:03",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:43:07",
+        "acao": "Login Biométrico"
+      },
+      {
+        "data": "03/07/2026, 11:43:56",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:44:00",
+        "acao": "Login Biométrico"
+      },
+      {
+        "data": "03/07/2026, 11:44:11",
+        "acao": "Login Biométrico"
+      },
+      {
+        "data": "03/07/2026, 11:44:14",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:44:17",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:44:20",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:44:24",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:44:30",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:44:30",
+        "acao": "Logout"
+      },
+      {
+        "data": "03/07/2026, 11:45:11",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:47:31",
+        "acao": "Login Biométrico"
+      },
+      {
+        "data": "03/07/2026, 11:48:01",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:48:16",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:48:19",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:48:22",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:48:25",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:48:30",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:48:30",
+        "acao": "Logout"
+      },
+      {
+        "data": "03/07/2026, 11:49:12",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:56:05",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:56:11",
+        "acao": "Login Biométrico"
+      },
+      {
+        "data": "03/07/2026, 11:56:14",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:56:17",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:56:20",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:56:23",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:56:29",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 11:56:30",
+        "acao": "Logout"
+      },
+      {
+        "data": "03/07/2026, 11:56:50",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 12:09:25",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 12:09:31",
+        "acao": "Login Biométrico"
+      },
+      {
+        "data": "03/07/2026, 12:09:34",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 12:09:37",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 12:09:40",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 12:09:43",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 12:09:47",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 12:09:48",
+        "acao": "Logout"
+      },
+      {
+        "data": "03/07/2026, 12:10:29",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 12:14:15",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 12:14:22",
+        "acao": "Login Biométrico"
+      },
+      {
+        "data": "03/07/2026, 12:14:24",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 12:14:27",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 12:14:30",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 12:14:33",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 12:14:38",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "03/07/2026, 12:14:38",
+        "acao": "Logout"
+      },
+      {
+        "data": "03/07/2026, 12:15:18",
+        "acao": "Login efetuado"
+      }
+    ]
+  }
+]

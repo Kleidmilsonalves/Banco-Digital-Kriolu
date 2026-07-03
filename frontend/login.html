@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Banco Digital Kriolu</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h1>🏦 Banco Digital Kriolu</h1>
+
+<p class="subtitulo">
+Autenticação Segura
+</p>
+
+<label>Utilizador</label>
+
+<input
+type="text"
+id="username"
+placeholder="Introduza o utilizador">
+
+<label>Palavra-passe</label>
+
+<div class="password-box">
+
+<input
+type="password"
+id="password"
+placeholder="Introduza a palavra-passe">
+
+<i
+class="fa-solid fa-eye-slash"
+id="togglePassword">
+</i>
+
+</div>
+
+<div class="remember">
+
+<input
+type="checkbox"
+id="lembrar">
+
+<label for="lembrar">
+
+Lembrar utilizador
+
+</label>
+
+</div>
+
+<div class="remember">
+
+<input
+type="checkbox"
+id="deviceTrusted">
+
+<label for="deviceTrusted">
+
+Confiar neste dispositivo
+
+</label>
+
+</div>
+
+<p id="mensagem"></p>
+
+<button id="btnLogin">
+
+Entrar
+
+</button>
+
+<button
+id="btnBiometria"
+type="button">
+
+Entrar com Biometria
+
+</button>
+
+</div>
+
+<script src="login.js"></script>
+
+</body>
+
+</html>
