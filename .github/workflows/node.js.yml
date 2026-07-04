@@ -39,5 +39,8 @@ jobs:
       - name: Esperar servidor
         run: npx wait-on http://localhost:3000
 
+      - name: Verificar servidor
+        run: curl http://localhost:3000  
+
       - name: Executar testes
         run: npx playwright test    
