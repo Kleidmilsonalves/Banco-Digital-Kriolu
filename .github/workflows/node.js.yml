@@ -33,12 +33,11 @@ jobs:
       - name: Instalar Playwright
         run: npx playwright install --with-deps
 
-      - name: Executar testes
-        run: npx playwright test
       - name: Start server
-        run: |
-          cd backend
-          npm install
-          node server.js &
-      - name: Wait server
-        run: npx wait-on http://localhost:3000    
+        run: node server.js &
+
+      - name: Esperar servidor
+        run: npx wait-on http://localhost:3000
+
+      - name: Executar testes
+        run: npx playwright test    
