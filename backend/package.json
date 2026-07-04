@@ -14,7 +14,8 @@
     "express": "^4.21.2"
   },
   "devDependencies": {
-    "@playwright/test": "^1.61.1"
+    "@playwright/test": "^1.61.1",
+    "wait-on": "^8.0.5"
   },
   "keywords": [],
   "type": "commonjs"
