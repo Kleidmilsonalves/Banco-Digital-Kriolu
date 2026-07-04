@@ -18,7 +18,7 @@ module.exports = defineConfig({
 
     use: {
 
-        headless: false,
+        headless: true,
 
         viewport: {
             width: 1366,
