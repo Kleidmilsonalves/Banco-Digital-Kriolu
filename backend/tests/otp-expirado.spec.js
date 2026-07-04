@@ -1,3 +1,4 @@
+const BASE_URL = process.env.BASE_URL || "http://127.0.0.1:5500/frontend";
 const { test, expect } = require('@playwright/test');
 
 test.setTimeout(45000);
@@ -15,7 +16,7 @@ test('NT-03 - Código OTP expirado', async ({ page, request }) => {
     );
         
     // Abrir Login
-    await page.goto('http://127.0.0.1:5500/frontend/login.html');
+    await page.goto(`${BASE_URL}/login.html`);
 
     // Login
     await page.fill('#username', 'admin');

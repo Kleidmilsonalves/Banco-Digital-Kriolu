@@ -1,3 +1,4 @@
+const BASE_URL = process.env.BASE_URL || "http://127.0.0.1:5500/frontend";
 const { test, expect } = require('@playwright/test');
 
 test('NT-04 - Biometria desativada', async ({ page, request }) => {
@@ -14,7 +15,7 @@ test('NT-04 - Biometria desativada', async ({ page, request }) => {
     );
 
     // Abrir Login
-    await page.goto('http://127.0.0.1:5500/frontend/login.html');
+    await page.goto(`${BASE_URL}/login.html`);
 
     // Utilizador
     await page.fill('#username', 'admin');

@@ -1,9 +1,10 @@
+const BASE_URL = process.env.BASE_URL || "http://127.0.0.1:5500/frontend";
 const { test, expect } = require('@playwright/test');
 
 test('NT-02 - Código OTP incorreto', async ({ page }) => {
 
     // Abrir Login
-    await page.goto('http://127.0.0.1:5500/frontend/login.html');
+    await page.goto(`${BASE_URL}/login.html`);
 
     // Login válido
     await page.fill('#username', 'admin');
