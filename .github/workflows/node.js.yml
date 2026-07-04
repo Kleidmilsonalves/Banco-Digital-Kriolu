@@ -35,3 +35,10 @@ jobs:
 
       - name: Executar testes
         run: npx playwright test
+      - name: Start server
+        run: |
+          cd backend
+          npm install
+          node server.js &
+      - name: Wait server
+        run: npx wait-on http://localhost:3000    
