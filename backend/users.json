@@ -15,7 +15,7 @@
     "biometricEnabled": true,
     "emailAlerts": true,
     "smsAlerts": true,
-    "lastDevice": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+    "lastDevice": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
     "history": [
       {
         "data": "03/07/2026, 00:42:41",
@@ -580,6 +580,98 @@
       {
         "data": "04/07/2026, 19:21:16",
         "acao": "Login efetuado"
+      },
+      {
+        "data": "04/07/2026, 19:31:30",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "04/07/2026, 19:31:34",
+        "acao": "Login Biométrico"
+      },
+      {
+        "data": "04/07/2026, 19:31:35",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "04/07/2026, 19:31:36",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "04/07/2026, 19:31:37",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "04/07/2026, 19:31:38",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "04/07/2026, 19:31:39",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "04/07/2026, 19:31:40",
+        "acao": "Logout"
+      },
+      {
+        "data": "04/07/2026, 19:32:15",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "04/07/2026, 21:56:49",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "04/07/2026, 21:56:55",
+        "acao": "Logout"
+      },
+      {
+        "data": "04/07/2026, 21:57:20",
+        "acao": "Login Biométrico"
+      },
+      {
+        "data": "04/07/2026, 21:57:22",
+        "acao": "Logout"
+      },
+      {
+        "data": "04/07/2026, 23:26:53",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "04/07/2026, 23:26:58",
+        "acao": "Logout"
+      },
+      {
+        "data": "04/07/2026, 23:28:48",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "04/07/2026, 23:29:00",
+        "acao": "Logout"
+      },
+      {
+        "data": "04/07/2026, 23:29:08",
+        "acao": "Login Biométrico"
+      },
+      {
+        "data": "04/07/2026, 23:29:10",
+        "acao": "Logout"
+      },
+      {
+        "data": "04/07/2026, 23:29:21",
+        "acao": "Login Biométrico"
+      },
+      {
+        "data": "04/07/2026, 23:29:28",
+        "acao": "Logout"
+      },
+      {
+        "data": "04/07/2026, 23:30:01",
+        "acao": "Login efetuado"
+      },
+      {
+        "data": "04/07/2026, 23:30:25",
+        "acao": "Logout"
       }
     ]
   }
