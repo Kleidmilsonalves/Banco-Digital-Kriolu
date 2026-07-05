@@ -5,52 +5,149 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Banco Digital Kriolu</title>
+    <title>Banco Digital Kriolu - Dashboard</title>
 
     <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body>
+<body class="dashboard-page">
 
-<div class="login-box">
 
-<h1>🏦 Banco Digital Kriolu</h1>
+<div class="dashboard">
 
-<p class="subtitulo">
+    <div class="topo">
 
-Bem-vindo ao sistema!
+    <div class="titulo">
 
-</p>
+    <h1 class="tituloBanco">🏦 Banco Digital Kriolu</h1>
 
-<h2 id="nome"></h2>
+    <p class="subtitulo">
+        Bem-vindo ao sistema!
+    </p>
 
-<hr>
+</div>
 
-<p><strong>Saldo:</strong></p>
+    <div class="perfil">
 
-<h2 id="saldo"></h2>
+        <img
+            src="img/avatar.png"
+            alt="Avatar"
+            class="avatar">
 
-<hr>
+        <div>
 
-<p><strong>Email</strong></p>
+            <h3 id="nomeTopo"></h3>
 
-<p id="email"></p>
+            <p class="cargo">
 
-<p><strong>Telefone</strong></p>
+                Conta Administrador
 
-<p id="telefone"></p>
+            </p>
 
-<br>
+        </div>
 
-<button id="btnLogout">
+    </div>
 
-Logout
+</div>
 
-</button>
+    <!-- Card do utilizador -->
+    <div class="card principal saldo-card">
+
+    <div class="card-left">
+
+        <div class="user-info">
+
+            <div class="user-icon">
+
+                👤
+
+            </div>
+
+            <div>
+
+                <h2 id="nome"></h2>
+
+            </div>
+
+        </div>
+
+        <div class="saldo-info">
+
+            <p class="saldoTitulo">
+
+                💰 Saldo Disponível
+
+            </p>
+
+            <h2 id="saldo"></h2>
+
+        </div>
+
+    </div>
+
+    <div class="card-right">
+
+        <div class="wallet-icon">
+
+            💳
+
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- Duas colunas -->
+    <div class="dashboard-grid">
+
+        <!-- Informações -->
+        <div class="card">
+
+            <h3>📋 Informações da Conta</h3>
+
+            <p><strong>📧 Email:</strong>
+                <span id="email"></span>
+            </p>
+
+            <p><strong>📱 Telefone:</strong>
+                <span id="telefone"></span>
+            </p>
+
+            <p><strong>📅 Último acesso:</strong>
+                <span id="ultimoAcesso"></span>
+            </p>
+
+        </div>
+
+        <!-- Segurança -->
+        <div class="card">
+
+            <h3>🔐 Segurança</h3>
+
+            <p><strong>📱 Dispositivo:</strong>
+                <span id="device"></span>
+            </p>
+
+            <p><strong>👆 Biometria:</strong>
+                <span id="biometria"></span>
+            </p>
+
+            <p><strong>📧 Alertas Email:</strong>
+                <span id="emailAlert"></span>
+            </p>
+
+            <p><strong>📲 Alertas SMS:</strong>
+                <span id="smsAlert"></span>
+            </p>
+
+        </div>
+
+    </div>
+
+    <button id="btnLogout">Logout</button>
 
 </div>
 
