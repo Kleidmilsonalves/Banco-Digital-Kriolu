@@ -2,7 +2,7 @@
 
 Sistema de Banco Digital desenvolvido no âmbito da unidade curricular **Teste de Qualidade de Software**, com foco na segurança da autenticação, testes automatizados e integração contínua (CI/CD).
 
----
+
 
 ## 📖 Descrição
 
@@ -10,7 +10,7 @@ O **Banco Digital Kriolu** é uma aplicação Web que simula um sistema bancári
 
 Além das funcionalidades da aplicação, o projeto inclui uma estratégia de testes automatizados utilizando **Playwright**, garantindo a validação das funcionalidades mais importantes do sistema.
 
----
+
 
 ## 🎯 Objetivos
 
@@ -35,7 +35,7 @@ Além das funcionalidades da aplicação, o projeto inclui uma estratégia de te
 - Histórico de operações
 - Logout
 
----
+
 
 # 🛠 Tecnologias Utilizadas
 
@@ -68,7 +68,7 @@ Além das funcionalidades da aplicação, o projeto inclui uma estratégia de te
 
 - GitHub Actions
 
----
+
 
 # 📂 Estrutura do Projeto
 
@@ -99,7 +99,7 @@ Banco-Digital-Kriolu/
 └── README.md
 ```
 
----
+
 
 # 🔐 Fluxo de Funcionamento
 
@@ -111,7 +111,7 @@ Banco-Digital-Kriolu/
 6. O Dashboard é apresentado.
 7. O utilizador pode terminar a sessão através do Logout.
 
----
+
 
 # 🧪 Testes Automatizados
 
@@ -135,7 +135,7 @@ Foram implementados testes para validar:
 
 Os testes garantem que todas as funcionalidades principais da aplicação funcionam corretamente.
 
----
+
 
 # 🚀 Como executar o projeto
 
@@ -169,7 +169,7 @@ ou
 node server.js
 ```
 
----
+
 
 # ▶️ Executar os testes
 
@@ -177,7 +177,7 @@ node server.js
 npx playwright test
 ```
 
----
+
 
 # 📊 Visualizar o relatório dos testes
 
@@ -185,7 +185,7 @@ npx playwright test
 npx playwright show-report
 ```
 
----
+
 
 # 🌐 Deploy com Render
 
@@ -212,7 +212,7 @@ npm start
 
 Após cada atualização enviada para o GitHub, o Render pode efetuar automaticamente um novo deploy da aplicação.
 
----
+
 
 # 🔄 Integração Contínua (CI)
 
@@ -227,7 +227,7 @@ Sempre que é realizado um **push** ou **pull request**, o workflow executa auto
 
 Este processo permite identificar erros antes da integração de novas alterações.
 
----
+
 
 # 🚀 Entrega Contínua (CD)
 
@@ -256,7 +256,7 @@ Render
 Aplicação publicada
 ```
 
----
+
 
 # 📈 Benefícios da utilização de CI/CD
 
@@ -267,7 +267,7 @@ Aplicação publicada
 - Redução de falhas em produção
 - Desenvolvimento mais seguro
 Link de CD utilizamos o render: https://banco-digital-kriolu.onrender.com
----
+
 
 # 👨‍💻 Autores
 
@@ -275,7 +275,6 @@ Link de CD utilizamos o render: https://banco-digital-kriolu.onrender.com
 
 Projeto desenvolvido para a unidade curricular **Teste de Qualidade de Software**, aplicando conceitos de desenvolvimento Web, autenticação segura, testes automatizados, integração contínua e deploy em ambiente de produção.
 
----
 
 # 📄 Licença
 
