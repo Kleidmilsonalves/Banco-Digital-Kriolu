@@ -1,27 +1,43 @@
 # 🏦 Banco Digital Kriolu
 
-## Sprint Mission 1 – Sistema de Autenticação Segura
-
-### Grupo I
-
-Projeto desenvolvido no âmbito da unidade curricular **Testes e Qualidade de Software**, com o objetivo de implementar um sistema de autenticação seguro para o Banco Digital Kriolu.
+Sistema de Banco Digital desenvolvido no âmbito da unidade curricular **Teste de Qualidade de Software**, com foco na segurança da autenticação, testes automatizados e integração contínua (CI/CD).
 
 ---
 
-# 📌 Objetivo
+## 📖 Descrição
 
-Desenvolver um sistema de autenticação que permita aumentar a segurança das contas bancárias através da implementação de:
+O **Banco Digital Kriolu** é uma aplicação Web que simula um sistema bancário digital, permitindo que os utilizadores efetuem o login através de autenticação segura com **palavra-passe**, **Autenticação em Dois Fatores (2FA)** e **login biométrico**.
 
-- Login com utilizador e palavra-passe;
-- Autenticação em dois fatores (2FA);
-- Autenticação biométrica;
-- Reconhecimento de dispositivos confiáveis;
-- Alertas de segurança por Email;
-- Alertas de segurança por SMS.
+Além das funcionalidades da aplicação, o projeto inclui uma estratégia de testes automatizados utilizando **Playwright**, garantindo a validação das funcionalidades mais importantes do sistema.
 
 ---
 
-# 🚀 Tecnologias Utilizadas
+## 🎯 Objetivos
+
+- Desenvolver uma aplicação Web com autenticação segura.
+- Implementar autenticação em dois fatores (2FA).
+- Simular login biométrico.
+- Automatizar testes funcionais.
+- Aplicar práticas de Integração Contínua (CI).
+- Publicar a aplicação utilizando Render.
+
+---
+
+## ✨ Funcionalidades
+
+- Login com utilizador e palavra-passe
+- Autenticação em Dois Fatores (OTP)
+- Envio do código OTP por Email ou SMS
+- Login Biométrico
+- Dispositivo Confiável
+- Recuperação de palavra-passe
+- Dashboard do utilizador
+- Histórico de operações
+- Logout
+
+---
+
+# 🛠 Tecnologias Utilizadas
 
 ## Frontend
 
@@ -33,155 +49,129 @@ Desenvolver um sistema de autenticação que permita aumentar a segurança das c
 
 - Node.js
 - Express.js
+- CORS
 
 ## Testes
 
 - Playwright
 
-## Base de Dados
+## Controlo de Versões
 
-- JSON (users.json)
+- Git
+- GitHub
+
+## Deploy
+
+- Render
+
+## CI/CD
+
+- GitHub Actions
 
 ---
 
 # 📂 Estrutura do Projeto
 
-```
+```text
 Banco-Digital-Kriolu/
 
-│
-├── backend/
-│   ├── server.js
-│   ├── users.json
-│   ├── package.json
-│   └── tests/
-│
 ├── frontend/
 │   ├── login.html
 │   ├── metodo2fa.html
 │   ├── otp.html
 │   ├── dashboard.html
-│   ├── recover.html
-│   ├── style.css
-│   └── *.js
+│   ├── recuperar.html
+│   ├── login.js
+│   ├── dashboard.js
+│   ├── otp.js
+│   ├── metodo2fa.js
+│   └── style.css
+│
+├── backend/
+│   ├── server.js
+│   ├── users.json
+│   ├── email.js
+│   ├── sms.js
+│   ├── tests/
+│   ├── package.json
+│   └── playwright.config.js
 │
 └── README.md
 ```
 
 ---
 
-# 🔐 Funcionalidades
+# 🔐 Fluxo de Funcionamento
 
-## Login
-
-- Autenticação com utilizador e palavra-passe.
-
----
-
-## Autenticação 2FA
-
-Após o login o utilizador escolhe receber o código OTP por:
-
-- Email
-- SMS
-
----
-
-## Código OTP
-
-- Código de 6 dígitos.
-- Validade de 30 segundos.
-- Validação antes do acesso ao Dashboard.
-
----
-
-## Dashboard
-
-Apresenta:
-
-- Nome
-- Saldo
-- Email
-- Telefone
-- Histórico
-- Último acesso
-
----
-
-## Logout
-
-Permite terminar a sessão do utilizador.
-
----
-
-## Recuperação de Conta
-
-Permite redefinir a palavra-passe.
-
----
-
-## Autenticação Biométrica
-
-Permite acesso direto ao Dashboard quando a biometria está ativa.
-
----
-
-## Dispositivo Confiável
-
-Permite reconhecer dispositivos previamente autorizados.
-
----
-
-## Alertas
-
-Após autenticação o sistema envia:
-
-- Alerta por Email
-- Alerta por SMS
-
----
-
-# ▶️ Como Executar
-
-## Instalar dependências
-
-```bash
-npm install
-```
-
----
-
-## Iniciar o servidor
-
-```bash
-node server.js
-```
-
-Servidor disponível em:
-
-```
-http://localhost:3000
-```
-
----
-
-## Abrir o Frontend
-
-Abrir:
-
-```
-frontend/login.html
-```
-
-ou utilizar o Live Server do Visual Studio Code.
+1. O utilizador introduz as credenciais.
+2. O sistema valida o utilizador.
+3. O utilizador escolhe Email ou SMS.
+4. O sistema gera um código OTP.
+5. O código é validado.
+6. O Dashboard é apresentado.
+7. O utilizador pode terminar a sessão através do Logout.
 
 ---
 
 # 🧪 Testes Automatizados
 
-Foi utilizada a framework **Playwright** para automatizar os testes do sistema.
+Os testes foram desenvolvidos utilizando **Playwright**.
 
-## Executar todos os testes
+Foram implementados testes para validar:
+
+- Login válido
+- Login inválido
+- Palavra-passe incorreta
+- OTP correto
+- OTP incorreto
+- OTP expirado
+- Dashboard
+- Logout
+- Login biométrico
+- Biometria desativada
+- Dispositivo confiável
+- APIs de Login
+- APIs de OTP
+
+Os testes garantem que todas as funcionalidades principais da aplicação funcionam corretamente.
+
+---
+
+# 🚀 Como executar o projeto
+
+## 1. Clonar o repositório
+
+```bash
+git clone https://github.com/SEU_UTILIZADOR/Banco-Digital-Kriolu.git
+```
+
+## 2. Entrar no projeto
+
+```bash
+cd Banco-Digital-Kriolu/backend
+```
+
+## 3. Instalar dependências
+
+```bash
+npm install
+```
+
+## 4. Executar o servidor
+
+```bash
+npm start
+```
+
+ou
+
+```bash
+node server.js
+```
+
+---
+
+# ▶️ Executar os testes
 
 ```bash
 npx playwright test
@@ -189,108 +179,104 @@ npx playwright test
 
 ---
 
-## Executar apenas um teste
-
-Exemplo:
+# 📊 Visualizar o relatório dos testes
 
 ```bash
-npx playwright test tests/login.spec.js
+npx playwright show-report
 ```
 
 ---
 
-# ✅ Casos de Teste
+# 🌐 Deploy com Render
 
-## Testes Funcionais
+A aplicação pode ser publicada utilizando a plataforma **Render**.
 
-- CT-01 – Login
-- CT-02 – Login + OTP
-- CT-03 – Login Biométrico
-- CT-04 – Logout
-- CT-05 – Dispositivo Confiável
-- CT-06 – Alerta por Email
-- CT-07 – Alerta por SMS
-- CT-08 – Dashboard
+### Passos
 
----
+1. Criar uma conta no Render.
+2. Ligar o repositório GitHub.
+3. Criar um novo **Web Service**.
+4. Configurar:
 
-## Testes Negativos
+**Build Command**
 
-- NT-01 – Palavra-passe incorreta
-- NT-02 – Código OTP incorreto
-- NT-03 – Código OTP expirado
-- NT-04 – Biometria desativada
+```bash
+npm install
+```
 
----
+**Start Command**
 
-## Testes API
+```bash
+npm start
+```
 
-- API-01 – POST /login
-- API-02 – POST /validate-otp
+Após cada atualização enviada para o GitHub, o Render pode efetuar automaticamente um novo deploy da aplicação.
 
 ---
 
-# 📊 Resultados
+# 🔄 Integração Contínua (CI)
 
-| Tipo | Quantidade |
-|------|-----------:|
-| Testes Funcionais | 8 |
-| Testes Negativos | 4 |
-| Testes API | 2 |
-| **Total** | **14** |
+O projeto utiliza **GitHub Actions** para automatizar o processo de integração contínua.
 
-## Resultado Final
+Sempre que é realizado um **push** ou **pull request**, o workflow executa automaticamente:
 
-- Testes Executados: **14**
-- Testes Aprovados: **14**
-- Testes Reprovados: **0**
+- Checkout do código
+- Instalação das dependências
+- Execução dos testes Playwright
+- Geração do relatório de testes
 
-**Taxa de Sucesso: 100%**
+Este processo permite identificar erros antes da integração de novas alterações.
 
 ---
 
-# 📈 Métricas de Qualidade
+# 🚀 Entrega Contínua (CD)
 
-| KPI | Resultado |
-|------|----------:|
-| Taxa de Sucesso | **100%** |
-| Taxa de Defeitos | **28,57%** |
-| Cobertura de Testes | **100%** |
+Após a conclusão com sucesso dos testes, o código fica preparado para publicação.
 
----
+Quando integrado com o **Render**, o deploy é realizado automaticamente sempre que existe uma nova versão no ramo principal.
 
-# 🔒 Requisitos Implementados
+O fluxo completo é:
 
-- Login Seguro
-- Autenticação 2FA
-- Recuperação de Conta
-- Dashboard
-- Logout
-- Autenticação Biométrica
-- Dispositivo Confiável
-- Alertas por Email
-- Alertas por SMS
-
----
-
-# 👥 Grupo
-
-**Grupo I**
-
-Sprint Mission 1
-
-Banco Digital Kriolu
-
-Universidade de Santiago
-
-Curso de Engenharia Informática
-
-Ano Letivo 2025/2026
+```text
+Programador
+      │
+      ▼
+GitHub
+      │
+      ▼
+GitHub Actions
+      │
+      ▼
+Testes Playwright
+      │
+      ▼
+Render
+      │
+      ▼
+Aplicação publicada
+```
 
 ---
 
-# 📌 Conclusão
+# 📈 Benefícios da utilização de CI/CD
 
-O projeto Banco Digital Kriolu implementa um sistema de autenticação seguro baseado em múltiplas camadas de proteção, incluindo autenticação em dois fatores, biometria e reconhecimento de dispositivos confiáveis.
+- Automatização dos testes
+- Deteção precoce de erros
+- Deploy automático
+- Melhor qualidade do software
+- Redução de falhas em produção
+- Desenvolvimento mais seguro
+Link de CD utilizamos o render: https://banco-digital-kriolu.onrender.com
+---
 
-Foram realizados testes funcionais, negativos e de API, todos automatizados com Playwright. No final do desenvolvimento, os **14 testes foram executados com sucesso**, demonstrando a estabilidade e o correto funcionamento da aplicação.
+# 👨‍💻 Autores
+
+**Kleidmilson Alves Ruth De Melo Isberto Varela Rafael da Moura**
+
+Projeto desenvolvido para a unidade curricular **Teste de Qualidade de Software**, aplicando conceitos de desenvolvimento Web, autenticação segura, testes automatizados, integração contínua e deploy em ambiente de produção.
+
+---
+
+# 📄 Licença
+
+Este projeto foi desenvolvido exclusivamente para fins académicos.
